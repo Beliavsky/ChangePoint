@@ -1,5 +1,5 @@
 # ChangePoint
-Simulate a time series with a change in the mean (changepoint) and identify it. Compile with
+Simulate a Gaussian time series with a change in the mean (changepoint) and identify it. Compile with
 
 `gfortran kind.f90 random.f90 split_data.f90 xsplit_data.f90`
 
