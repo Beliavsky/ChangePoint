@@ -3,6 +3,8 @@ Simulate a Gaussian time series with a change in the mean (changepoint) and iden
 
 `gfortran kind.f90 random.f90 split_data.f90 xsplit_data.f90`
 
+The `test_split_data` program conducts two tests to validate the effectiveness of the split_data and compute_test_stats subroutines. Test 1 uses data with a constant mean, and the results show that the program does not falsely identify significant change points, as evidenced by high p-values. Test 2 introduces a true change point in the data, and the program successfully detects partitions close to the actual change point, reflected by high test statistics and moderately low p-values. The ability to find the change point depends on the difference in means and the number of points in each split.
+
 Sample results:
 
 ```
