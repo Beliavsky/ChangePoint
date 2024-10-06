@@ -6,6 +6,7 @@ Simulate a time series with a change in the mean (changepoint) and identify it. 
 Sample results:
 
 ```
+                          #obs: 1000
  Test 1: Constant Mean
                      true mean:    0.000000
 
