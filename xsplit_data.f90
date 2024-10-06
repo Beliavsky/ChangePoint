@@ -28,6 +28,7 @@ logical, parameter :: call_random_seed_init = .true.
 integer, parameter :: niter_test_1 = 3, niter_test_2 = 3
 character (len=*), parameter :: fmt_cr = "(a30,':',*(f12.6))", fmt_ci = "(a30,':',*(1x,i0))"
 if (call_random_seed_init) call random_seed_init(123)
+write (*, fmt_ci) "#obs", n 
 ! Test 1: Constant Mean
 if (niter_test_1 > 0) print *, "Test 1: Constant Mean"
 write (*,fmt_cr) "true mean", true_means(1)
